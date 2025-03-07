@@ -1,14 +1,14 @@
 package org.example.enums;
 //Sağlık planlarının adlarını ve fiyatlarını tutacak..
 public enum Plan {
-    BASIC("BASIC", 100.0),
-    ADVANCED ("ADVANCED", 200.0),
-    PRO ("PRO", 200.0);
+    BASIC("BASIC", 100),
+    ADVANCED ("ADVANCED", 200),
+    PRO ("PRO", 200);
 
     private String name;
-    private double price;
+    private int price;
 
-    Plan(String name, double price) {
+    Plan(String name, int price) {
         this.name = name;
         this.price = price;
     }
@@ -17,7 +17,7 @@ public enum Plan {
         return name;
     }
 
-    public double getPrice() {
+    public int getPrice() {
         return price;
     }
 }

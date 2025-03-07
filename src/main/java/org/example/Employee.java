@@ -5,26 +5,26 @@ public class Employee {
     private String fullName;
     private String email;
     private String password;
-    private String[] healthplans;
+    private String[] healthPlans;
 
 
-    public Employee(int id, String fullName, String email, String password, String[] healthplans) {
+    public Employee(int id, String fullName, String email, String password, String[] healthPlans) {
         this.id = id;
         this.fullName = fullName;
         this.email = email;
         this.password = password;
-        this.healthplans = healthplans;
+        this.healthPlans = healthPlans;
     }
 
     public void addHealthPlan(int index, String name) {
-        if (index < 0 || index >= healthplans.length) {
+        if (index < 0 || index >= healthPlans.length) {
             System.out.println("Geçersiz Seçim");
             return;
         }
-        if (healthplans[index] != null) {
+        if (healthPlans[index] != null) {
             System.out.println("Burada zaten bir değer var");
         } else {
-            healthplans[index] = name;
+            healthPlans[index] = name;
             System.out.println("Sağlık Planı " + name + " eklendi.");
         }
     }
@@ -62,11 +62,11 @@ public class Employee {
     }
 
     public String[] getHealthPlans() {
-        return healthplans;
+        return healthPlans;
     }
 
     public void setHealthplans(String[] healthplans) {
-        this.healthplans = healthplans;
+        this.healthPlans = healthplans;
     }
 
     public String toString() {
@@ -74,7 +74,7 @@ public class Employee {
                 "id=" + id +
                 ", fullName='" + fullName + '\'' +
                 ", email='" + email + '\'' +
-                ", healthplans=" + String.join(", ", healthplans) +
+                ", healthplans=" + String.join(", ", healthPlans) +
                 '}';
     }
 }
