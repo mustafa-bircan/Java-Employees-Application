@@ -3,7 +3,7 @@ package org.example.enums;
 public enum Plan {
     BASIC("BASIC", 100),
     ADVANCED ("ADVANCED", 200),
-    PRO ("PRO", 200);
+    PRO ("PRO", 400);
 
     private String name;
     private int price;
